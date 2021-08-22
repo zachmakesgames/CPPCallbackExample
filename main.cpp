@@ -38,6 +38,10 @@ public:
         //Callbacks on static or non-member functions are easy to do, but passing callbacks between classes can
         //get tricky. Using this method avoids most of the mess and allows the method to be determined at run
         //time rather than compile time, even though this example doesn't demonstrate that.
+        
+        //Note that it is possible to hardcode the arguments to the callback function by replacing the
+        //placeholder here, however that defeats the point of the callback as the calling class can't
+        //pass its own arguments to the function.
         _caller->SetCallback(std::bind(&Controller::Callback, this, std::placeholders::_1));
     
     }
