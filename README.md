@@ -1,0 +1,2 @@
+# CPPCallbackExample
+Sometimes in software it is necessary to callback to another function that can be changed at run time. With static and non-member functions this can be done very simply with C style function pointer passes. However since C++ is most commonly object oriented, passing function pointers between classes can be difficult. This code is an example of how the standard library functional library can make passing function pointers between classes very simple. 
